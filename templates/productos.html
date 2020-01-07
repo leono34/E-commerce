@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h1>Productos de Mi Tienda de CodiGo</h1>
+<ul class ="list-group">
+    {% for pro in prod %}
+     <li class="list-group-item">
+         <a href="producto/{{pro.idprod}}">{{pro.nombre}}</a>
+     </li>
+    {% endfor %}
+</ul>
+{% endblock %}
